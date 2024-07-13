@@ -1,0 +1,24 @@
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  height: 80vh;
+  button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid gray;
+    padding: 8px;
+    &.medium-violet-red {
+      background-color: mediumvioletred;
+    }
+    &.midnight-blue {
+      background-color: midnightblue;
+    }
+    &:disabled {
+      opacity: 50;
+      cursor: not-allowed;
+      background-color: gray;
+    }
+  }
+}
